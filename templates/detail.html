@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content%}
+<section class="section-container flex-box detail-container">
+    <div class="margin-right-16">
+        <img src="{{product.images}}" alt="" class="product-detail-image">
+    </div>
+    <div>
+        <p class="detail-title">{{product.name}}</p>
+        <p class="detail-price">RS {{product.price}}</b>
+            
+    <div sclass="line"></div>
+    <div class="flex-box detail-actions">
+        <a href="/checkout/{{product.id}}"><button class="submit-btn margin-right-16">Buy Now</button></a>
+        <button class="try-btn">Try Glasses</button>
+    </div>
+    <p class="detail-title">Details</p>
+    <p>
+        {{product.detail}}
+    </p>
+    </div>
+</section>
+{% endblock %}
